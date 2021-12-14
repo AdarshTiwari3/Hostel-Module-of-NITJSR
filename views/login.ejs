@@ -1,0 +1,55 @@
+<%- include("partials/header") -%>
+<!--
+End Fixed Navigation
+==================================== -->
+<section class="single-page-header" style="background-image: url(images/blog/bp.jpg)  ; padding: 140px 0 70px;" >
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Log- in</h2>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="jumbotron centered">
+    <div class="container">
+      <h4 class="display-3">Login</h4>
+      <hr>
+     <div class="row">
+        <div class="col-sm-8">
+          <div class="card">
+            <div class="card-body">
+    
+              <!-- Makes POST request to /login route -->
+              <form action="/login" method="POST">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password">
+                </div>
+                <button type="submit" class="btn btn-dark">Login</button>
+              </form>
+    
+            </div>
+          </div>
+          <hr>
+          <p class="lead" style="color: black;">Register here, if you are new!!!</p>
+         
+        <a class="btn btn-light btn-lg" style="background-color :lightgreen;" href="/register" role="button">Register</a>
+  
+        </div>
+    </div>
+  </div>
+
+
+ 
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,96 @@
+<%- include("partials/header") -%>
+<section class="single-page-header" style="background-image: url(imagescopy/aboutclg.jpg) ;" >
+	<div class="container"  >
+		<div class="row">
+			<div class="col-md-12" >
+				<!-- <h2>Contact Me</h2> -->
+			</div>
+		</div>
+	</div>
+</section>
+
+ <!--Start Contact Us
+	=========================================== -->
+<section class="contact-us" id="contact">
+	<div class="container">
+		<div class="row">
+
+			<!-- section title -->
+			<div class="col-12">
+			<div class="title text-center" >
+				<h2>Apply For Hostel</h2>
+				<p>Please enter the required information !</p>
+				<div class="border"></div>
+			</div>
+			</div>
+			<!-- /section title -->
+
+			<!-- Contact Details -->
+			<div class="contact-details col-md-6 col-lg-6 " >
+			
+				<h1>Check Status</h1>
+				<form   method="post" role="form" action="/status">
+					<div class="form-group">
+						<input type="text" placeholder="Enter Your Registration ID" class="form-control" name="check" id="registration">
+					</div>
+				
+
+					<div id="success" class="success">
+						Thank you.)
+					</div>
+
+					<div id="error" class="error">
+						Sorry, don't know what happened. Try later :(
+					</div>
+					<div id="cf-submit">
+						<input type="submit" id="contact-submit" class="btn btn-dark" value="Submit">
+					</div>
+
+				</form>
+			
+				<!--/. End Footer Social Links -->
+			</div>
+			<!-- / End Contact Details -->
+
+			<!-- Contact Form -->
+			<div class="contact-form col-md-6 col-lg-6 " >
+				<!-- action="/contact" -->
+				<form   method="post" role="form" action="/contact">
+					<div class="form-group">
+						<input type="text" placeholder="Registration ID" class="form-control" name="registration" id="registration">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Semester/Dept" class="form-control" name="session" id="session">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+					</div>
+
+					<div class="form-group">
+						<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+					</div>
+
+					<div class="form-group">
+						<input type="text" placeholder="Phone" class="form-control" name="phone" id="phone">
+					</div>
+
+					<div id="success" class="success">
+						Thank you.)
+					</div>
+
+					<div id="error" class="error">
+						Sorry, don't know what happened. Try later :(
+					</div>
+					<div id="cf-submit">
+						<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+					</div>
+
+				</form>
+			</div> 
+				
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end section -->
+
+
+<%- include("partials/footer") -%>

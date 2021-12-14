@@ -1,0 +1,54 @@
+<%-include("partials/header.ejs")-%>
+<br>
+<br>
+<br>
+<br>
+<div>
+
+  <table class="table">
+   <thead class="thead-dark">
+    <tr>
+     <th>S.No.</th>
+     <th>Registration ID</th>
+     <th>Semester/Dept</th>
+     <th>Name</th>
+     <th>Email</th> 
+     <th>Phone</th>
+     <th>Hostel/Room</th>
+    </tr>
+   </thead>
+   <tbody>
+    
+    <!-- add table content -->
+    <% for(var i=0; i<users.length; i++){%>
+    
+      <tr>
+       <td><%= i + 1 %></td>
+       <td><%= users[i].registration %></td>
+       <td><%= users[i].session %></td>
+       <td><%= users[i].name %></td>
+       <td><%= users[i].email %></td>
+       <td><%= users[i].phone %></td>
+       <td>
+        <form action="/admin" method="POST" role="form">
+         <div class="form-group">
+        <input type="text" placeholder="<%= users[i].hostel %>" class="form-control"  name="hostel" id="registration">
+      </div>
+       <input type="hidden" value="<%=users[i]._id%>"  class="form-control" name="idd" >
+       <br>
+       <div id="cf-submit" style="text-align: center;">
+        <input type="submit" id="contact-submit" class="btn btn-dark" value="Edit" >
+      </div>
+    </form>
+      
+       </td>
+      </tr>
+      
+      <%} %>
+    
+   </tbody>
+  </table>
+  <br>
+  <br>
+</div>
+<%-include("partials/footer.ejs")-%>
