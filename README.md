@@ -27,8 +27,10 @@ Project is created with:
 ## Setup
 fristly go to the root directory path,then
 To run this project, install it locally using npm:
-
+```
 For more things just visit on the youtube link:https://youtu.be/K_A57dGZR9s
+
+```
 
 ```
 $ npm install
