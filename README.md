@@ -19,6 +19,10 @@ Project is created with:
 * Bootstrap
 * NodeJS
 * MongoDB
+* HTML
+* CSS
+* JAVASCRIPT
+* EXPRESS JS
 	
 ## Setup
 fristly go to the root directory path,then
